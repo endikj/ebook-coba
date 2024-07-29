@@ -1,0 +1,24 @@
+.md-flip {
+    max-width: none; 
+    /* Menghapus batasan lebar maksimum */
+    width: auto !important; /* Menyesuaikan lebar modal secara otomatis */
+
+    margin: 0; 
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+.mc-flip {
+    height: auto !important; /* Mengatur tinggi konten modal secara otomatis */
+    min-height: calc(100vh - 20px); /* Menjamin modal tidak melebihi tinggi layar */
+    
+}
+
+.mb-flip {
+    overflow-y: auto; /* Menambahkan overflow-y agar konten modal dapat digulir jika diperlukan */
+    padding: 30px;
+    
+    flex-grow: 1;
+}
+
